@@ -148,6 +148,7 @@
         @media screen and (min-width: 1440px) {
           @include grid(center, center);
           grid-template-columns: repeat(3, auto);
+          justify-self: end;
         }
         /* Medium */
         @media screen and (max-width: 1439px) and (min-width: 377px) {
