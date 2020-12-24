@@ -197,11 +197,25 @@ img {
 
 .footer-container {
   margin-top: -10rem;
+  background-color: var(--dark-blue3);
 }
 
 .footer-container .footer {
   padding-top: 5rem;
-  background-color: var(--dark-blue3);
+  /* Large */
+  /* Medium */
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-container .footer {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 960px) {
+  .footer-container .footer {
+    padding-top: 3;
+  }
 }
 
 .footer-container .footer .content {
