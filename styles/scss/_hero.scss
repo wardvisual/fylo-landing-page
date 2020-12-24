@@ -3,6 +3,7 @@
 .hero-container {
   background: url("../../images/bg-curvy-desktop.svg");
   @include background();
+
   /* Small */
   @media screen and (max-width: 375px) {
     background: url("../../images/bg-curvy-mobile.svg");
@@ -71,6 +72,10 @@
     @media screen and (min-width: 1440px) {
       padding-top: 5rem;
     }
+    /* Medium */
+    @media screen and (max-width: 1439px) and (min-width: 377px) {
+      padding-top: 7rem;
+    }
     .content {
       @include gridCenter();
       .img {
@@ -109,10 +114,20 @@
           line-height: var(--line-height-2);
           margin-bottom: 1rem;
           opacity: 1;
+          /* Large */
           @media screen and (min-width: 1440px) {
             font-size: 2rem;
             line-height: calc(
-              var(--line-height-2) + var(--line-height-2) + var(--line-height-1) -
+              var(--line-height-2) + var(--line-height-1) + var(--line-height-1) -
+                var(--line-height-2)
+            );
+            font-weight: var(--weight3);
+          }
+          /* Medium */
+          @media screen and (max-width: 1439px) and (min-width: 377px) {
+            font-size: 1.6rem;
+            line-height: calc(
+              var(--line-height-1) + var(--line-height-1) + var(--line-height-1) -
                 var(--line-height-2)
             );
             font-weight: var(--weight3);
