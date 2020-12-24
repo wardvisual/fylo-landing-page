@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--dark-blue2);
+  color: var(--white);
+  overflow-x: hidden;
+  line-height: var(--line-height-1);
+}
+
+p {
+  opacity: 0.8;
+  font-size: var(--p3);
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  padding: 13px 40px 13px 40px;
+  border-radius: 20px;
+  color: var(--white);
+  font-weight: var(--weight3);
+  background: linear-gradient(90deg, var(--cyan), var(--blue));
+  font-size: 1rem;
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+}

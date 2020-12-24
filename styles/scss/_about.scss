@@ -1,0 +1,96 @@
+@import "./global";
+
+.about-container {
+  margin-top: 4rem;
+  .content {
+    @include gridCenter();
+    /* Large */
+    @media screen and (min-width: 1440px) {
+      grid-template-columns: repeat(2, auto);
+    }
+    /* Medium */
+    @media screen and (max-width: 1439px) {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    /* Extra */
+    @media screen and (max-width: 718px) {
+      grid-template-columns: repeat(1, auto);
+    }
+
+    .img {
+      margin-bottom: 1.5rem;
+      img {
+        max-width: 20rem;
+        @media screen and (min-width: 1440px) {
+          max-width: 100%;
+        }
+        /* Medium */
+        @media screen and (max-width: 1439px) {
+          width: 100%;
+          max-width: 500px;
+        }
+      }
+    }
+
+    .txt {
+      /* Large */
+      @media screen and (min-width: 1440px) {
+        p {
+          max-width: 30rem;
+        }
+      }
+      p:nth-child(1) {
+        font-weight: var(--weight2);
+        font-size: var(--p2);
+        line-height: var(--line-height-1);
+        margin-bottom: 1rem;
+        opacity: 1;
+        /* Large */
+        @media screen and (min-width: 1440px) {
+          font-size: 2rem;
+          line-height: calc(
+            var(--line-height-2) + var(--line-height-2) + var(--line-height-1) -
+              var(--line-height-2)
+          );
+          font-weight: var(--weight3);
+        }
+        /* Medium */
+        @media screen and (max-width: 1439px) and (min-width: 377px) {
+          font-size: 1.8rem;
+          line-height: calc(
+            var(--line-height-2) + var(--line-height-2) + var(--line-height-1) -
+              var(--line-height-2) - var(--line-height-1)
+          );
+          font-weight: var(--weight3);
+        }
+      }
+
+      span:nth-child(2) {
+        @include grid(start, center);
+        a {
+          font-weight: var(--weight2);
+          font-size: var(--p2);
+          color: var(--cyan);
+          @include flex(start, center);
+
+          img {
+            width: 1.5rem;
+          }
+        }
+        div {
+          width: 100%;
+          margin-top: 0.2rem;
+          height: 1.9px;
+          background-color: var(--cyan);
+        }
+        &:hover {
+          a {
+            color: var(--white);
+            transition: var(--transition);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+/* Headings, Call-to-actions, Header Navigation */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+/* Body */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  /* ======= COLORS ======= */
+  /* PRIMARY */
+  --dark-blue1: hsl(217, 28%, 15%); // intro and email sign up background
+  --dark-blue2: hsl(218, 28%, 13%); // main background
+  --dark-blue3: hsl(216, 53%, 9%); // footer background
+  --dark-blue4: hsl(219, 30%, 18%); // testimonials background
+
+  /* Accent */
+  --cyan: hsl(176, 68%, 64%); // inside call-to-action gradient
+  --blue: hsl(198, 60%, 50%); // inside call-to-action gradient
+  --red: hsl(0, 100%, 63%); // error
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+
+  /* ======= WEIGHT ======= */
+  --weight1: 100;
+  --weight2: 400;
+  --weight3: 700;
+
+  /* ======= FONT FAMILY ======= */
+  --heading-font: "Raleway", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+
+  --transition: all 0.7s;
+  --p3: 0.8rem;
+  --p2: 1rem;
+  --p1: 1.5rem;
+  --line-height-1: 20px;
+  --line-height-2: 30px;
+}
+
+img {
+  width: 100%;
+  max-width: 10rem;
+}
+/* ======= LAYOUT ======= */
+@mixin gridCenter {
+  display: grid;
+  place-items: center;
+}
+
+@mixin grid($justify, $align) {
+  display: grid;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin breakPoints {
+  margin: 0 1rem 0 1rem;
+  /* Medium */
+  @media screen and (min-width: 376px) and (max-width: 1439px) {
+    margin: 0 2.5rem 0 2.5rem;
+  }
+  /* Large */
+  @media screen and (min-width: 1440px) {
+    margin: 0 4rem 0 4rem;
+  }
+}

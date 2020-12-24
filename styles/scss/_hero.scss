@@ -1,0 +1,122 @@
+@import "./global";
+
+.hero-container {
+  /* Layout */
+  @include grid(none, none);
+  grid-template-rows: auto 1fr;
+  .navbar {
+    padding: 1.5rem 0 1.5rem 0;
+    position: fixed;
+    background-color: var(--dark-blue2);
+    width: 100%;
+    z-index: 999;
+    /* Large */
+    @media screen and (min-width: 1440px) {
+      padding-top: 1.5rem;
+    }
+
+    .content {
+      //   max-width: 375px;
+
+      /* Layout */
+      @include flex(space-between, center);
+
+      .logo {
+        a {
+          @include gridCenter();
+          img {
+            width: 5rem;
+            /* Large */
+            @media screen and (min-width: 1440px) {
+              width: 7rem;
+            }
+          }
+        }
+      }
+
+      .menu {
+        @include grid(none, none);
+        grid-template-columns: repeat(3, auto);
+        li {
+          a {
+            padding: 5px;
+            font-weight: var(--weight1);
+            font-size: var(--p3);
+            opacity: 0.8;
+            /* Large */
+            @media screen and (min-width: 1440px) {
+              padding: 20px;
+            }
+
+            &:hover {
+              opacity: 1;
+              text-decoration: underline;
+              transition: var(--transition);
+            }
+          }
+        }
+      }
+    }
+  }
+  .wrapper {
+    padding-top: 10rem;
+    /* Large */
+    @media screen and (min-width: 1440px) {
+      padding-top: 5rem;
+    }
+    .content {
+      @include gridCenter();
+      .img {
+        img {
+          max-width: 20rem;
+          /* Large */
+          @media screen and (min-width: 1440px) {
+            max-width: 35rem;
+          }
+          /* Medium */
+          @media screen and (max-width: 1439px) {
+            max-width: 30rem;
+          }
+        }
+      }
+
+      .txt {
+        margin-top: 1.5rem;
+        text-align: center;
+        /* Large */
+        @media screen and (min-width: 1440px) {
+          p {
+            max-width: 40rem;
+          }
+        }
+        /* Medium */
+        @media screen and (max-width: 1439px) {
+          p {
+            max-width: 30rem;
+          }
+        }
+
+        p:nth-child(1) {
+          font-weight: var(--weight2);
+          font-size: var(--p1);
+          line-height: var(--line-height-2);
+          margin-bottom: 1rem;
+          opacity: 1;
+          @media screen and (min-width: 1440px) {
+            font-size: 2rem;
+            line-height: calc(
+              var(--line-height-2) + var(--line-height-2) + var(--line-height-1) -
+                var(--line-height-2)
+            );
+            font-weight: var(--weight3);
+          }
+        }
+
+        p:nth-child(2) {
+          font-size: var(--p3);
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}
