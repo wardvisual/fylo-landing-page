@@ -745,6 +745,10 @@ img {
   /* Medium */
 }
 
+.hero-container .wrapper .content .txt button {
+  width: 15rem;
+}
+
 @media screen and (min-width: 1440px) {
   .hero-container .wrapper .content .txt p {
     max-width: 40rem;
@@ -1361,7 +1365,7 @@ img {
 .testimonial-container .pop-up .actions button {
   width: 100%;
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 13px;
 }
 
