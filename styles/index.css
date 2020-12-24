@@ -78,6 +78,20 @@ img {
 }
 
 /* ======= LAYOUT ======= */
+/* ======= SCROLLBAR ======= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-blue2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
+  background: linear-gradient(90deg, var(--cyan), var(--blue));
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -167,6 +181,20 @@ img {
 }
 
 /* ======= LAYOUT ======= */
+/* ======= SCROLLBAR ======= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-blue2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
+  background: linear-gradient(90deg, var(--cyan), var(--blue));
+}
+
 .footer-container {
   margin-top: -10rem;
 }
@@ -531,7 +559,27 @@ img {
 }
 
 /* ======= LAYOUT ======= */
+/* ======= SCROLLBAR ======= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-blue2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
+  background: linear-gradient(90deg, var(--cyan), var(--blue));
+}
+
 .hero-container {
+  background: url("../../images/bg-curvy-desktop.svg");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: var(--dark-blue1);
+  /* Small */
   /* Layout */
   display: -ms-grid;
   display: grid;
@@ -543,6 +591,16 @@ img {
           align-items: none;
   -ms-grid-rows: auto 1fr;
       grid-template-rows: auto 1fr;
+}
+
+@media screen and (max-width: 375px) {
+  .hero-container {
+    background: url("../../images/bg-curvy-mobile.svg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: var(--dark-blue1);
+  }
 }
 
 .hero-container .navbar {
@@ -735,6 +793,20 @@ img {
 }
 
 /* ======= LAYOUT ======= */
+/* ======= SCROLLBAR ======= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-blue2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
+  background: linear-gradient(90deg, var(--cyan), var(--blue));
+}
+
 .showcase-container {
   margin-top: 8rem;
 }
@@ -875,6 +947,20 @@ img {
 }
 
 /* ======= LAYOUT ======= */
+/* ======= SCROLLBAR ======= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-blue2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
+  background: linear-gradient(90deg, var(--cyan), var(--blue));
+}
+
 .about-container {
   margin-top: 4rem;
 }
@@ -1046,6 +1132,20 @@ img {
 }
 
 /* ======= LAYOUT ======= */
+/* ======= SCROLLBAR ======= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-blue2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
+  background: linear-gradient(90deg, var(--cyan), var(--blue));
+}
+
 .testimonial-container {
   margin-top: 7rem;
   z-index: 1;

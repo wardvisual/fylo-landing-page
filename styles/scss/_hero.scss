@@ -1,6 +1,13 @@
 @import "./global";
 
 .hero-container {
+  background: url("../../images/bg-curvy-desktop.svg");
+  @include background();
+  /* Small */
+  @media screen and (max-width: 375px) {
+    background: url("../../images/bg-curvy-mobile.svg");
+    @include background();
+  }
   /* Layout */
   @include grid(none, none);
   grid-template-rows: auto 1fr;

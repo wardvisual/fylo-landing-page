@@ -70,3 +70,22 @@ img {
     margin: 0 4rem 0 4rem;
   }
 }
+
+@mixin background {
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-color: var(--dark-blue1);
+}
+
+/* ======= SCROLLBAR ======= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--dark-blue2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, var(--cyan), var(--blue));
+}
