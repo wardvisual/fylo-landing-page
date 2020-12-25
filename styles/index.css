@@ -616,6 +616,7 @@ img {
     height: 100vh;
     background-repeat: no-repeat;
     background-color: var(--dark-blue1);
+    margin-bottom: 2rem;
   }
 }
 
@@ -844,8 +845,7 @@ img {
 }
 
 .showcase-container {
-  padding-top: 4rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .showcase-container .content {
