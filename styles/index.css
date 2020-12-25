@@ -592,7 +592,7 @@ img {
 .hero-container {
   background: url("../../images/bg-curvy-desktop.svg");
   background-size: cover;
-  height: 100vh;
+  height: 50rem;
   background-repeat: no-repeat;
   background-color: var(--dark-blue1);
   /* Small */
@@ -613,7 +613,7 @@ img {
   .hero-container {
     background: url("../../images/bg-curvy-mobile.svg");
     background-size: cover;
-    height: 100vh;
+    height: 50rem;
     background-repeat: no-repeat;
     background-color: var(--dark-blue1);
     margin-bottom: 2rem;
@@ -1184,7 +1184,6 @@ img {
 }
 
 .testimonial-container {
-  margin-top: 7rem;
   z-index: 1;
   display: -ms-grid;
   display: grid;
