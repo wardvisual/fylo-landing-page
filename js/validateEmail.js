@@ -8,17 +8,16 @@ const validateEmail = (email) => {
 
 const validate = () => {
   const userEmail = email.value;
-
   if (validateEmail(userEmail)) {
-    message.textContent = `${userEmail} is valid!`;
+    message.textContent = `Invitation sent!`;
     message.style = `
         color: var(--cyan);
-      `;
+    `;
   } else {
-    message.textContent = `${userEmail} is not valid!`;
+    message.textContent = `Please enter a valid email address`;
     message.style = `
         color: var(--red);
-      `;
+    `;
   }
   setTimeout(() => {
     message.textContent = "";

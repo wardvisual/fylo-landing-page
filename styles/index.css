@@ -1365,9 +1365,22 @@ img {
 
 .testimonial-container .pop-up .actions span {
   position: absolute;
-  margin: 7rem 12rem 0 0;
-  font-weight: var(--weight2);
-  font-size: var(--p2);
+  margin: 6.5rem 22rem 0 0;
+  font-weight: var(--weight3);
+  font-size: var(--p3);
+}
+
+@media screen and (max-width: 1439px) and (min-width: 467px) {
+  .testimonial-container .pop-up .actions span {
+    margin: -4rem 0 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .testimonial-container .pop-up .actions span {
+    margin: -4rem 0 0 1.5rem;
+    font-size: 10px;
+  }
 }
 
 .testimonial-container .pop-up .actions button {
