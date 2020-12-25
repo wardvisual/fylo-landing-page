@@ -8,7 +8,6 @@
   @media screen and (max-width: 375px) {
     background: url("../../images/bg-curvy-mobile.svg");
     @include background();
-    margin-bottom: 2rem;
   }
   /* Layout */
   @include grid(none, none);

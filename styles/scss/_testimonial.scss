@@ -4,6 +4,14 @@
   z-index: 1;
   @include grid(none, none);
 
+  /* Medium */
+  @media screen and (max-width: 1440px) {
+    margin-top: 1rem;
+  }
+  /* Large */
+  @media screen and (min-width: 1441px) {
+    margin-top: 14rem;
+  }
   .content {
     margin-bottom: 10rem;
     @include grid(none, none);

@@ -592,9 +592,10 @@ img {
 .hero-container {
   background: url("../../images/bg-curvy-desktop.svg");
   background-size: cover;
-  height: 45rem;
   background-repeat: no-repeat;
   background-color: var(--dark-blue1);
+  /* Medium */
+  /* Large */
   /* Small */
   /* Layout */
   display: -ms-grid;
@@ -609,14 +610,38 @@ img {
       grid-template-rows: auto 1fr;
 }
 
+@media screen and (max-width: 1440px) {
+  .hero-container {
+    height: 50rem;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .hero-container {
+    height: 50rem;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .hero-container {
     background: url("../../images/bg-curvy-mobile.svg");
     background-size: cover;
-    height: 45rem;
     background-repeat: no-repeat;
     background-color: var(--dark-blue1);
-    margin-bottom: 2rem;
+    /* Medium */
+    /* Large */
+  }
+}
+
+@media screen and (max-width: 375px) and (max-width: 1440px) {
+  .hero-container {
+    height: 50rem;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 1441px) {
+  .hero-container {
+    height: 50rem;
   }
 }
 
@@ -1193,7 +1218,21 @@ img {
   -webkit-box-align: none;
       -ms-flex-align: none;
           align-items: none;
+  /* Medium */
+  /* Large */
   /* Pop up */
+}
+
+@media screen and (max-width: 1440px) {
+  .testimonial-container {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .testimonial-container {
+    margin-top: 14rem;
+  }
 }
 
 .testimonial-container .content {

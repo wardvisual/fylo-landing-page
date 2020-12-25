@@ -73,9 +73,17 @@ img {
 
 @mixin background {
   background-size: cover;
-  height: 45rem;
   background-repeat: no-repeat;
   background-color: var(--dark-blue1);
+
+  /* Medium */
+  @media screen and (max-width: 1440px) {
+    height: 50rem;
+  }
+  /* Large */
+  @media screen and (min-width: 1441px) {
+    height: 50rem;
+  }
 }
 
 /* ======= SCROLLBAR ======= */
