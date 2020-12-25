@@ -234,8 +234,14 @@
             would be happy to help you.
           </p>
           <div class="actions">
-            <input type="text" placeholder="email@example.com" />
-            <button>Get Started For Free</button>
+            <input
+              type="email"
+              placeholder="email@example.com"
+              id="email"
+              name="email"
+            />
+            <span id="message"></span>
+            <button onclick="validate()">Get Started For Free</button>
           </div>
         </div>
       </div>
@@ -309,5 +315,6 @@
     </div>
     <!-- script -->
     <script defer src="./js/scroll.js"></script>
+    <script defer src="./js/validateEmail.js"></script>
   </body>
 </html>

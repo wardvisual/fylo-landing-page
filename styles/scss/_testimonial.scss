@@ -111,6 +111,12 @@
         font-size: 0.7rem;
       }
 
+      span {
+        position: absolute;
+        margin: 7rem 12rem 0 0;
+        font-weight: var(--weight2);
+        font-size: var(--p2);
+      }
       button {
         width: 100%;
         margin-top: 1rem;

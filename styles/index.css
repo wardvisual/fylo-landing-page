@@ -1363,6 +1363,13 @@ img {
   font-size: 0.7rem;
 }
 
+.testimonial-container .pop-up .actions span {
+  position: absolute;
+  margin: 7rem 12rem 0 0;
+  font-weight: var(--weight2);
+  font-size: var(--p2);
+}
+
 .testimonial-container .pop-up .actions button {
   width: 100%;
   margin-top: 1rem;
