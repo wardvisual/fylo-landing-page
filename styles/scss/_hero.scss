@@ -48,6 +48,8 @@
             font-weight: var(--weight1);
             font-size: var(--p3);
             opacity: 0.8;
+            font-family: var(--heading-font);
+
             /* Large */
             @media screen and (min-width: 1440px) {
               padding: 20px;
@@ -114,6 +116,7 @@
           font-size: var(--p1);
           line-height: var(--line-height-2);
           margin-bottom: 1rem;
+          font-family: var(--heading-font);
           opacity: 1;
           /* Large */
           @media screen and (min-width: 1440px) {

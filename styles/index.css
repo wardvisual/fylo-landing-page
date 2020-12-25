@@ -136,6 +136,7 @@ button {
   background: -webkit-gradient(linear, left top, right top, from(var(--cyan)), to(var(--blue)));
   background: linear-gradient(90deg, var(--cyan), var(--blue));
   font-size: 1rem;
+  font-family: var(--heading-font);
 }
 
 button:hover {
@@ -707,6 +708,7 @@ img {
   font-weight: var(--weight1);
   font-size: var(--p3);
   opacity: 0.8;
+  font-family: var(--heading-font);
   /* Large */
 }
 
@@ -793,6 +795,7 @@ img {
   font-size: var(--p1);
   line-height: var(--line-height-2);
   margin-bottom: 1rem;
+  font-family: var(--heading-font);
   opacity: 1;
   /* Large */
   /* Medium */
@@ -961,6 +964,7 @@ img {
   line-height: var(--line-height-1);
   margin-bottom: 1rem;
   opacity: 1;
+  font-family: var(--heading-font);
 }
 
 .showcase-container .content .service .txt p:nth-child(2) {
@@ -1094,6 +1098,7 @@ img {
   font-size: var(--p2);
   line-height: var(--line-height-1);
   margin-bottom: 1rem;
+  font-family: var(--heading-font);
   opacity: 1;
   /* Large */
   /* Medium */
@@ -1218,21 +1223,7 @@ img {
   -webkit-box-align: none;
       -ms-flex-align: none;
           align-items: none;
-  /* Medium */
-  /* Large */
   /* Pop up */
-}
-
-@media screen and (max-width: 1440px) {
-  .testimonial-container {
-    margin-top: 1rem;
-  }
-}
-
-@media screen and (min-width: 1441px) {
-  .testimonial-container {
-    margin-top: 14rem;
-  }
 }
 
 .testimonial-container .content {
@@ -1356,6 +1347,7 @@ img {
   font-size: var(--p2);
   line-height: var(--line-height-1);
   margin-bottom: 1rem;
+  font-family: var(--heading-font);
   opacity: 1;
   /* Medium */
 }
@@ -1371,7 +1363,7 @@ img {
 @media screen and (max-width: 1439px) and (min-width: 377px) {
   .testimonial-container .pop-up p:nth-child(1) {
     font-size: 1.5rem;
-    line-height: calc( var(--line-height-2) + var(--line-height-2) + var(--line-height-1) - var(--line-height-2));
+    line-height: calc( var(--line-height-1) + var(--line-height-1) + var(--line-height-1) - var(--line-height-2));
     font-weight: var(--weight3);
   }
 }

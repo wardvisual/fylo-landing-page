@@ -45,6 +45,8 @@
         font-size: var(--p2);
         line-height: var(--line-height-1);
         margin-bottom: 1rem;
+        font-family: var(--heading-font);
+
         opacity: 1;
         /* Large */
         @media screen and (min-width: 1440px) {

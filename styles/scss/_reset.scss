@@ -39,7 +39,7 @@ button {
   font-weight: var(--weight3);
   background: linear-gradient(90deg, var(--cyan), var(--blue));
   font-size: 1rem;
-
+  font-family: var(--heading-font);
   &:hover {
     opacity: 0.9;
     cursor: pointer;
