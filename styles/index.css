@@ -592,7 +592,7 @@ img {
 .hero-container {
   background: url("../../images/bg-curvy-desktop.svg");
   background-size: cover;
-  height: 50rem;
+  height: 45rem;
   background-repeat: no-repeat;
   background-color: var(--dark-blue1);
   /* Small */
@@ -613,7 +613,7 @@ img {
   .hero-container {
     background: url("../../images/bg-curvy-mobile.svg");
     background-size: cover;
-    height: 50rem;
+    height: 45rem;
     background-repeat: no-repeat;
     background-color: var(--dark-blue1);
     margin-bottom: 2rem;
