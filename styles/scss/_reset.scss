@@ -12,6 +12,9 @@ body {
   line-height: var(--line-height-1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 p {
   opacity: 0.8;
   font-size: var(--p3);
